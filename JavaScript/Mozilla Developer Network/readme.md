@@ -9,7 +9,7 @@
 
 2. Hoisted Variables
 
-   * "Variables that are hoisted return a value of undefined. So even if you declare and initialize after you use or refer to this variable, it still returns undefined."
+   * Variables that are hoisted return a value of undefined. So even if you declare and initialize after you use or refer to this variable, it still returns undefined.
    ```javascript
    console.log(x === undefined); // true
    var x = 3;
@@ -19,3 +19,5 @@
    console.log(x === undefined); // true
    x = 3;
    ```
+
+3. The properties of objects and content of an array assigned to constants are not protected
