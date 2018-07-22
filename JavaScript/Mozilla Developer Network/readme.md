@@ -21,3 +21,10 @@
    ```
 
 3. The properties of objects and content of an array assigned to constants are not protected
+
+4. Converting strings to numbers
+
+   * An alternative method to `parseInt()` and `parseFloat()` for retrieving a Number from a String is with the + (unary plus) operator.
+   ```javascript
+   (+'1.1') + (+'1.1') // 2.2 
+   ```
