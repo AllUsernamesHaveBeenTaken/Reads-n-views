@@ -1,1 +1,1 @@
-This folder is dedicated to topic about JavaScript.
+This folder is dedicated to topics about JavaScript.
