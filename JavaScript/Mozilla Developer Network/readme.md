@@ -26,5 +26,7 @@
 
    * An alternative method to `parseInt()` and `parseFloat()` for retrieving a Number from a String is with the + (unary plus) operator.
    ```javascript
-   (+'1.1') + (+'1.1') // 2.2 
+   '1.1' + '1.1' // '1.11.1'
+   (+'1.1') + (+'1.1') // 2.2   
+   // Note: the parentheses are added for clarity, not required.
    ```
