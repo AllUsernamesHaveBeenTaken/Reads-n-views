@@ -2,7 +2,7 @@
 
 [Source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction)
 
-[Where did I left off?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+[Where did I left off?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
 ## What I've learned?!
 
