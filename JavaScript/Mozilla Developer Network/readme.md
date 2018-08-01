@@ -2,7 +2,7 @@
 
 [Source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction)
 
-[Where did I left off?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates)
+[Where did I left off?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 
 ## What I've learned?!
 
@@ -132,3 +132,36 @@
    ```
    * When you delete an array element, the array length is not affected. For example, if you delete a[3], a[4] is still a[4] and a[3] is undefined.
    * If you want an array element to exist but have an undefined value, use the undefined keyword instead of the delete operator.
+
+1. Array object
+
+   * If you wish to initialize an array with a single element, and the element happens to be a Number, you must use the bracket syntax. When a single Number value is passed to the Array() constructor or function, it is interpreted as an arrayLength, not as a single element.
+   
+   * In ES2015, you can use Array.of static method to create arrays with single element.
+   
+   ```javascript
+   let array = Array.of(9.3);  // wisenArray contains only one element 9.3
+   ```
+1. Map object 
+
+   * ECMAScript 2015 introduces a new data structure to map values to values. A Map object is a simple key/value map and can iterate its elements in insertion order.
+   
+   * These three tips can help you to decide whether to use a Map or an Object:
+  
+      * Use maps over objects when keys are unknown until run time, and when all keys are the same type and all values are the same type.
+      * Use maps if there is a need to store primitive values as keys because object treats each key as a string whether it's a number value, boolean value or any other primitive value.
+      * Use objects when there is logic that operates on individual elements.
+   
+1. Set object 
+
+   * Set objects are collections of values. You can iterate its elements in insertion order. A value in a Set may only occur once; it is unique in the Set's collection.
+   
+   * You can create an Array from a Set using Array.from or the spread operator. Also, the Set constructor accepts an Array to convert in the other direction. Note again that Set objects store unique values, so any duplicate elements from an Array are deleted when converting.
+   
+   ```javascript
+   Array.from(mySet);
+   [...mySet2];
+
+   mySet2 = new Set([1, 2, 3, 4]);
+   ```
+   
