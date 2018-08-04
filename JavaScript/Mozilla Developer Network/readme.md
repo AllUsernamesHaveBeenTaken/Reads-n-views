@@ -2,7 +2,7 @@
 
 [Source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction)
 
-[Where did I left off?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+[Where did I left off?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 
 ## What I've learned?!
 
@@ -164,4 +164,25 @@
 
    mySet2 = new Set([1, 2, 3, 4]);
    ```
+1. Objects
+
+   **Defining Getters and Setters**
+    
+   * A getter is a method that gets the value of a specific property. A setter is a method that sets the value of a specific property.
    
+   ```javascript
+   var o = {
+      a: 7,
+      get b() { 
+        return this.a + 1;
+      },
+      set c(x) {
+        this.a = x / 2;
+      }
+    };
+
+   console.log(o.a); // 7
+   console.log(o.b); // 8
+   o.c = 50;
+   console.log(o.a); // 25
+   ```
